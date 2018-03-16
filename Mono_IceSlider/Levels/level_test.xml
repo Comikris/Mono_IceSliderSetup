@@ -1,0 +1,52 @@
+<level width="480" height="270">
+  <Walls>
+    <Wall id="0" x="128" y="112" />
+    <Wall id="1" x="128" y="128" />
+    <Wall id="2" x="128" y="144" />
+    <Wall id="3" x="144" y="144" />
+    <Wall id="4" x="160" y="144" />
+    <Wall id="5" x="176" y="144" />
+    <Wall id="6" x="192" y="144" />
+    <Wall id="7" x="208" y="144" />
+    <Wall id="8" x="224" y="144" />
+    <Wall id="9" x="240" y="144" />
+    <Wall id="10" x="256" y="144" />
+    <Wall id="11" x="272" y="144" />
+    <Wall id="12" x="288" y="144" />
+    <Wall id="13" x="304" y="144" />
+    <Wall id="14" x="320" y="144" />
+    <Wall id="15" x="336" y="144" />
+    <Wall id="16" x="336" y="128" />
+    <Wall id="17" x="336" y="112" />
+    <Wall id="18" x="320" y="112" />
+    <Wall id="19" x="304" y="112" />
+    <Wall id="20" x="288" y="112" />
+    <Wall id="21" x="272" y="112" />
+    <Wall id="22" x="256" y="112" />
+    <Wall id="23" x="240" y="112" />
+    <Wall id="24" x="224" y="112" />
+    <Wall id="25" x="208" y="112" />
+    <Wall id="26" x="192" y="112" />
+    <Wall id="27" x="176" y="112" />
+    <Wall id="28" x="176" y="112" />
+    <Wall id="29" x="160" y="112" />
+    <Wall id="30" x="144" y="112" />
+  </Walls>
+  <Water>
+    <Ice id="0" x="320" y="128" />
+    <Ice id="1" x="304" y="128" />
+    <Ice id="2" x="288" y="128" />
+    <Ice id="3" x="272" y="128" />
+    <Ice id="4" x="256" y="128" />
+    <Ice id="5" x="240" y="128" />
+    <Ice id="6" x="224" y="128" />
+    <Ice id="7" x="208" y="128" />
+    <Ice id="8" x="192" y="128" />
+    <Ice id="9" x="176" y="128" />
+    <Ice id="10" x="160" y="128" />
+  </Water>
+  <Player_Finish>
+    <Finish id="0" x="144" y="128" />
+    <PlayerStart id="1" x="320" y="128" />
+  </Player_Finish>
+</level>

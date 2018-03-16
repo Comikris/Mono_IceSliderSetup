@@ -11,11 +11,17 @@ namespace Mono_IceSlider
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Player player;
+        Texture2D playerTexture;
+        Vector2 playerPosition;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
+            graphics.PreferredBackBufferWidth = 480;
+            graphics.PreferredBackBufferHeight = 270;
             Content.RootDirectory = "Content";
+            
         }
 
         /// <summary>
@@ -28,6 +34,9 @@ namespace Mono_IceSlider
         {
             // TODO: Add your initialization logic here
 
+            player = new Player();
+            FileLoader fl = new FileLoader();
+            fl.LoadLevel("C:/Users/Kris/Documents/Visual Studio 2015/Mono_IceSlider/Mono_IceSlider/Levels/level_test.xml");
             base.Initialize();
         }
 
@@ -41,6 +50,12 @@ namespace Mono_IceSlider
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            playerPosition = new Vector2(32, 32);
+            Animation playerAnimation = new Animation();
+            playerTexture = Content.Load<Texture2D>("Player_char");
+            playerAnimation.Initialize(playerTexture, Vector2.Zero, 16, 16, 0, 30, Color.White, 1f, true);
+            player.Initialize(playerAnimation, playerPosition);
+
         }
 
         /// <summary>
@@ -64,6 +79,7 @@ namespace Mono_IceSlider
 
             // TODO: Add your update logic here
 
+            player.Update(gameTime, this);
             base.Update(gameTime);
         }
 
@@ -73,9 +89,13 @@ namespace Mono_IceSlider
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Gray);
 
             // TODO: Add your drawing code here
+            spriteBatch.Begin();
+            // player.Draw(spriteBatch);
+            spriteBatch.Draw(playerTexture, player.Position, null, Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }
