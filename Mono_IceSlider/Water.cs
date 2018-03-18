@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Mono_IceSlider
 {
-    class Finish : Entity
+    class Water : Entity
     {
-        public Finish(float x, float y) : base(x, y)
+        public Water(float x, float y) : base(x, y)
         {
 
         }

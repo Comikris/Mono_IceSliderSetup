@@ -8,15 +8,24 @@ namespace Mono_IceSlider
 {
     class LevelController : ILevelController
     {
+        public FileLoader MyFileLoader;
+        public List<Level> Levels;
+        public Game1 Game;
         public Level ActiveLevel;
 
-        public void AddNewLevel()
+        public void Initialize()
         {
-            throw new NotImplementedException();
+            MyFileLoader = new FileLoader();
+        }
+
+        public void AddNewLevel(string filepath)
+        {
+            // MyFileLoader.LoadLevel(filepath, Game)
         }
 
         public void ExecuteLevel()
         {
+
         }
 
         public void RemoveActiveLevel()
@@ -24,9 +33,9 @@ namespace Mono_IceSlider
             throw new NotImplementedException();
         }
 
-        public void SetActiveLevel()
+        public void SetActiveLevel(int id)
         {
-            throw new NotImplementedException();
+            ActiveLevel = Levels[id];
         }
     }
 }

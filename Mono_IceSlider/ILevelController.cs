@@ -9,8 +9,8 @@ namespace Mono_IceSlider
     interface ILevelController
     {
         void ExecuteLevel();
-        void SetActiveLevel();
-        void AddNewLevel();
+        void SetActiveLevel(int id);
+        void AddNewLevel(string filepath);
         void RemoveActiveLevel();
     }
 }

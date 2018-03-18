@@ -42,6 +42,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Animation.cs" />
+    <Compile Include="Entity.cs" />
     <Compile Include="FileLoader.cs" />
     <Compile Include="Finish.cs" />
     <Compile Include="Game1.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StrongIce.cs" />
     <Compile Include="Wall.cs" />
+    <Compile Include="Water.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
@@ -71,6 +73,7 @@
     <MonoGameContentReference Include="Content\Content.mgcb" />
     <None Include="app.manifest" />
     <Content Include="Levels\level_test.xml" />
+    <Content Include="Levels\level_two.xml" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
